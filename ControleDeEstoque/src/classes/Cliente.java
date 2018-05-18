@@ -26,4 +26,15 @@ public class Cliente {
 	this.nome = nome;
     }
 
+    public void exibeCliente(Cliente c){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("CPF: " + this.cpf);
+    }
+    
+    public void exibeTodosClientes(Cliente[] c){
+        for(Cliente c1 : c){
+            exibeCliente(c1);
+        }
+    }
+    
 }
