@@ -11,9 +11,12 @@ public class Cliente {
     private String cpf;
     private String nome;
     
+    public Cliente() {}
 
-
-    public Cliente(){};
+    public Cliente(String cpf, String nome){
+        this.cpf = cpf;
+        this.nome = nome;
+    }
     
     
     public void setCPF(String cpf){

@@ -1,4 +1,7 @@
 package classes;
+
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author João Pedro Baptista
@@ -8,18 +11,13 @@ public abstract class Produto {
     protected String codigo, descricao;
     protected float valor;
 
-    public Produto(){};
+    public Produto(){
+        this.codigo = JOptionPane.showInputDialog("Código do produto: ");
+        this.descricao = JOptionPane.showInputDialog("Descrição do produto: ");
+        this.valor = Float.valueOf(JOptionPane.showInputDialog("Valor: "));
+    }
     
     public abstract float calcularPrecos();
-    
-    public static void tipoProduto(int opt) {
-        if(opt == 1) { //nacional
-            
-        }
-        else if(opt == 2) { //importado
-            
-        }
-    }
     
     public void setCodigo(String codigo){
     	this.codigo = codigo;
