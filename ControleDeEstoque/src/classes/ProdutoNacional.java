@@ -9,21 +9,18 @@ import javax.swing.JOptionPane;
  */
 public class ProdutoNacional extends Produto{
 
-    private float taxaImposto;
+    private float taxaImposto = 0.2f;
  
     public ProdutoNacional() {
         super();
-        JOptionPane.showMessageDialog(null, "O preço com impostos fica: "+this.calcularPrecos());
+        JOptionPane.showMessageDialog(null, "O preço com impostos fica: "+ calcularPrecos());
     }
     
     @Override
     public float calcularPrecos() {
-        return ((this.getValor()*this.taxaImposto)+this.getValor());
+        return ((this.getValor()*this.getTaxaImposto())+this.getValor());
     }
 
-    public void setTaxaImposto(){
-    	this.taxaImposto = 0.2f;
-    }
     public float getTaxaImposto(){
 	return this.taxaImposto;
     }

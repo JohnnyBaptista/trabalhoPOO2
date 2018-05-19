@@ -16,7 +16,7 @@ public class Menus {
     private static int maxCli = 1000;
     private Cliente[] vetorClientes;
     private int opt;
-    public String aux, menu = "MENU";
+    public String aux;
     
     public Menus() {
         do {
@@ -25,7 +25,7 @@ public class Menus {
     } 
     
     public int menu() {
-
+        String menu = "MENU";
         menu = menu + "\n1- Cadastrar \n2- Registrar Compra \n3- Relatórios \n4- Salvar Dados \n5- Carregar Dados \n6- Sair";
         aux = JOptionPane.showInputDialog(menu);
         this.opt = Integer.valueOf(aux);
@@ -42,8 +42,9 @@ public class Menus {
         return this.opt;
     }
     
-    public void Cadastrar() {         
-        menu = "\n1- Cliente \n2- Produto \n3- Sair";
+    public void Cadastrar() {    
+        String menu = "Escolha um opção: ";
+        menu = menu + "\n1- Cliente \n2- Produto \n3- Sair";
         aux = JOptionPane.showInputDialog(menu);
         opt = Integer.valueOf(aux);
         if(opt == 1)
