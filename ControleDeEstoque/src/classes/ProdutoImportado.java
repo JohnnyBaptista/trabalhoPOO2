@@ -10,6 +10,13 @@ public class ProdutoImportado extends Produto{
 
 
     public ProdutoImportado(){};
+    
+       
+    @Override
+    public float calcularPrecos() {
+        return 0;
+        //Definir
+    }
 
     public void setTaxaImposto(float taxa){
 	this.taxaImposto = taxa;
@@ -22,12 +29,5 @@ public class ProdutoImportado extends Produto{
     }
     public float getTaxaImportacao(){
     	return this.taxaImportacao;
-    }
-   
-    @Override
-    public float calcularPrecos() {
-        return 0;
-        //Definir
-    }
-    
+    }    
 }

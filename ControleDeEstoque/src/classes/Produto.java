@@ -9,7 +9,16 @@ public abstract class Produto {
     protected float valor;
 
     public Produto(){};
-
+    
+    public static void tipoProduto(int opt) {
+        if(opt == 1) { //nacional
+            
+        }
+        else if(opt == 2) { //importado
+            
+        }
+    }
+    
     public void setCodigo(String codigo){
     	this.codigo = codigo;
     }
