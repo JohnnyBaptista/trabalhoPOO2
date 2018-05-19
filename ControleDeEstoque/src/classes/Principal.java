@@ -1,7 +1,5 @@
 package classes;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author João Pedro Baptista

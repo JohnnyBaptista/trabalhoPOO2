@@ -1,4 +1,7 @@
 package classes;
+
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author João Pedro Baptista
@@ -7,9 +10,12 @@ package classes;
 public class Cliente {
     private String cpf;
     private String nome;
+    
+
 
     public Cliente(){};
-
+    
+    
     public void setCPF(String cpf){
     	this.cpf = cpf;
     }
@@ -25,5 +31,4 @@ public class Cliente {
     public void setNome(String nome){
 	this.nome = nome;
     }
-
 }

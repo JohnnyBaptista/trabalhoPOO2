@@ -10,6 +10,8 @@ public abstract class Produto {
 
     public Produto(){};
     
+    public abstract float calcularPrecos();
+    
     public static void tipoProduto(int opt) {
         if(opt == 1) { //nacional
             
@@ -37,7 +39,5 @@ public abstract class Produto {
     public float getValor(){
 	return this.valor;
     }
-
-    public abstract float calcularPrecos();
 
 }
