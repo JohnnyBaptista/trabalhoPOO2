@@ -5,9 +5,9 @@ package classes;
  * @author Vinicius Vedovotto
  */
 public class Item {
-    int num;
-    Produto produto;
-    float quant; //Armazenar uma cópia do objeto Produto
+    private int num;
+    private String descricao, codigoProduto;
+    private float valor, quant;
 
     public void setNum(int num){
 	this.num = num;
@@ -15,12 +15,7 @@ public class Item {
     public int getNum(){
     	return this.num;
     }
-    public Produto getProduto(){
-    	return this.produto;
-    }
-    public void setProduto(Produto produto){
-    	this.produto = produto;
-    }
+   
     public float getQuant(){    
         return this.quant;
     }
@@ -29,6 +24,30 @@ public class Item {
     	this.quant = quant;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getCodigoProduto() {
+        return codigoProduto;
+    }
+
+    public void setCodigoProduto(String codigoProduto) {
+        this.codigoProduto = codigoProduto;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
+    
 
     public float calcularTotal(){
     	//DEFINIR

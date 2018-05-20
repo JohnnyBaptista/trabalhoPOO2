@@ -6,13 +6,11 @@ package classes;
  */
 public class ProdutoNacional extends Produto{
 
-    private float taxaImposto;
+    private final float taxaImposto = 0.20f;
 
     public ProdutoNacional(){};
 
-    public void setTaxaImposto(float taxaImposto){
-    	this.taxaImposto = taxaImposto;
-    }
+    
     public float getTaxaImposto(){
 	return this.taxaImposto;
     }
@@ -20,7 +18,7 @@ public class ProdutoNacional extends Produto{
     @Override
     public float calcularPrecos() {
         //DEFINIR
-        return 0;
+        return (this.getValor()*(this.taxaImposto + 1));
     }
     
 }
