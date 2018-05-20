@@ -11,5 +11,9 @@ public class Principal {
       
        
        
+       Cliente[] clientes;
+       Cliente c1 = new Cliente();
+       
+       
    } 
 }
