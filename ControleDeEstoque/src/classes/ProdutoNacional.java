@@ -1,4 +1,7 @@
 package classes;
+
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author João Pedro Baptista
@@ -6,21 +9,20 @@ package classes;
  */
 public class ProdutoNacional extends Produto{
 
-    private float taxaImposto;
-
-    public ProdutoNacional(){};
-
-    public void setTaxaImposto(float taxaImposto){
-    	this.taxaImposto = taxaImposto;
+    private float taxaImposto = 0.2f;
+ 
+    public ProdutoNacional() {
+        super();
+        JOptionPane.showMessageDialog(null, "O preço com impostos fica: "+ calcularPrecos());
     }
-    public float getTaxaImposto(){
-	return this.taxaImposto;
-    }
-
+    
     @Override
     public float calcularPrecos() {
-        //DEFINIR
-        return 0;
+        return ((this.getValor()*this.getTaxaImposto())+this.getValor());
+    }
+
+    public float getTaxaImposto(){
+	return this.taxaImposto;
     }
     
 }

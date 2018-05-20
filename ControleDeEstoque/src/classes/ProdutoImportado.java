@@ -9,7 +9,9 @@ public class ProdutoImportado extends Produto{
     private float taxaImposto, taxaImportacao;
 
 
-    public ProdutoImportado(){};
+    public ProdutoImportado() {
+        super();
+    }
     
        
     @Override
